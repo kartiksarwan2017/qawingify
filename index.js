@@ -2,12 +2,14 @@ const express = require('express');
 const app = express();
 
 
+app.use(express.static('public'));
+
 app.get('/login', (req, res) => {
-  res.sendFile(__dirname + '/login.html');
+  res.sendFile(__dirname  +  '/public/login.html');
 });
 
 app.get('/home', (req, res) => {
-  res.sendFile(__dirname + '/home.html');
+  res.sendFile(__dirname + '/public/home.html');
 });
 
 // POST route to handle login
