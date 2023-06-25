@@ -1,0 +1,24 @@
+{
+  "name": "wingify-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.15.0",
+    "cypress-plugin-snapshots": "^1.4.4"
+  },
+  "dependencies": {
+    "cypress-commands": "^3.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
